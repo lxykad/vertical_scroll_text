@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:example="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.lib.widget.verticalmarqueetextview.VerticalMarqueeTextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        example:marqueeSpeed="25"
+        example:text="99999999999999999999999999999999999999999999999999999999999999999999999999999999999"
+        example:textColor="@android:color/black"
+        example:textSize="20dp"
+        example:textStyle="bold" />
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+    </ViewFlipper>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#2f00"
+        android:overScrollMode="never" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="add"
+        android:text="+1" />
+
+</LinearLayout>
